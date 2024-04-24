@@ -1,0 +1,14 @@
+<html>
+<body>
+    <h2>Formulario Categoria</h2>
+    <h3>Esto es una prueba</h3>
+    <form >
+        {% csrf_token %}
+        <div>
+          <input type="text" name="nombre"  placeholder="Nombre">
+          <label for="nombre">Nombre de la Categoria</label>
+          <button type="submit">Agregar</button>
+        </div>
+    </form>
+</body>
+</html>
