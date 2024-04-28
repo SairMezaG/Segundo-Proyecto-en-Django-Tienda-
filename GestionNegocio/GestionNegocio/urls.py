@@ -20,12 +20,12 @@ from appTienda import views
 from django.conf import settings
 from django.conf.urls.static import static
 
-
-
+""" path('', views.inicio),  esto era para antes de usar la etiqueta <a> en inicio.html"""
+"""path('', views.inicio, name='inicio'), Esto se usa con el name para redirigir al inicio.html"""
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.inicio), 
-    path('vistaCategorias/', views.vistaCategorias), 
+    path('', views.inicio, name='inicio'), 
+    path('vistaCategorias/', views.vistaCategorias, name= 'vistaCategorias'), 
      
 
 ]
